@@ -1,0 +1,13 @@
+# ./.tmuxinator.yml
+
+name: tammypaste
+root: /home/tammy/projects/tammypaste
+
+windows:
+  - api: vi api.py
+  - api_tests: vi test_api.py
+  - datastore: vi datastore.py
+  - ds_tests: vi test_datastore.py
+  - console: ipython
+  - mongo: mongo -u tammypaste_api_user -p d8a3a65f --host localhost --port 27017 --authenticationDatabase "admin" tammypaste
+  - shell: zsh --login

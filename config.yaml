@@ -1,0 +1,9 @@
+database:
+  hostname: localhost
+  port: 27017
+  db_name: tammypaste
+  auth_source: admin
+  auth_mechanism: SCRAM-SHA-256
+  api_server:
+    username: tammypaste_api_user
+    password: d8a3a65f
